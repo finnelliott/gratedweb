@@ -14,7 +14,7 @@ export default function StatisticsSection() {
           </div>
           <dl className="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
               {statistics.stats.map((item, index) => (
-                <div className={index === 0 ? "flex flex-col" : "flex flex-col mt-10 sm:mt-0"}>
+                <div key={index} className={index === 0 ? "flex flex-col" : "flex flex-col mt-10 sm:mt-0"}>
                 <dt className="order-2 mt-2 text-lg leading-6 font-medium text-gray-500 dark:text-gray-200">{item.context}</dt>
                 <dd className="order-1 text-5xl font-semibold text-gray-900 dark:text-gray-50">{item.number}</dd>
                 </div>

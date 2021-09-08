@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import content from '../../data/content'
 
 function classNames(...classes: String[]) {
@@ -10,7 +11,7 @@ const hero = content.home.hero
 export default function HeroSection() {
   return (
     <main className="lg:relative bg-white dark:bg-gray-900">
-    <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+    <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left lg:flex">
       <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
         <h1 className="text-3xl tracking-tight font-semibold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
           <span className="block xl:inline">{hero.heading1}</span>
@@ -31,14 +32,22 @@ export default function HeroSection() {
           
         </div>
       </div>
+      <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <div
+        className="absolute top-12 lg:top-0 inset-0 w-full h-full"
+      >
+          <Image
+            layout="fill"
+            objectFit="cover"
+            objectPosition="center center"
+            src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+            alt=""
+            />
+      </div>
+        
     </div>
-    <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-      <img
-        className="absolute inset-0 w-full h-full object-cover"
-        src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-        alt=""
-      />
     </div>
+    
   </main>
 
     )

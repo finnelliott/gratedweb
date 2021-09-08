@@ -73,9 +73,8 @@ export default function MainNavigation() {
         <div className="hidden md:flex-1 md:flex md:items-center md:justify-end">
           <nav className="flex space-x-10 justify-end">
             {mainNavigation.pageLinks.map((item) => (
-              <Link href={item.linkHref} >
+              <Link href={item.linkHref} key={item.linkText} >
                 <a
-                  key={item.linkText} 
                   className="text-base font-medium text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-400">
               {item.linkText}
             </a>
@@ -138,9 +137,11 @@ export default function MainNavigation() {
             <div className="py-6 px-5">
               <div className="flex flex-col">
                 {mainNavigation.pageLinks.map((item) => (
-                <Link href={item.linkHref} >
+                <Link 
+                    href={item.linkHref}
+                    key={item.linkText} 
+                >
                   <a
-                    key={item.linkText}
                     className="text-base font-medium text-gray-900 hover:text-gray-700 my-2 dark:text-gray-200 dark:hover:text-gray-400"
                   >
                     {item.linkText}
