@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import content from '../../data/content'
+import heroMockUp from '../../public/HeroMockUp.png'
 
 function classNames(...classes: String[]) {
   return classes.filter(Boolean).join(' ')
@@ -32,15 +33,15 @@ export default function HeroSection() {
           
         </div>
       </div>
-      <div className="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+      <div className="relative w-full h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
       <div
         className="absolute top-12 lg:top-0 inset-0 w-full h-full"
       >
           <Image
             layout="fill"
-            objectFit="cover"
+            objectFit="scale-down"
             objectPosition="center center"
-            src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
+            src={heroMockUp}
             alt=""
             />
       </div>
