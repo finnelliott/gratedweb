@@ -73,9 +73,9 @@ export default function HeroSection() {
         
       </div>
     </div>
-    <div className="w-full h-screen col-span-1 relative p-4">
+    <div className="w-full h-screen col-span-1 relative">
     <div
-      className="w-full h-full absolute top-0 right-0 m-4"
+      className="w-full h-full absolute top-0 right-0"
     >
         <Image
           layout="fill"
