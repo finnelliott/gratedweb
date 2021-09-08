@@ -22,11 +22,11 @@ const newsletterSignUp = content.home.newsletterSignUp
 
 export default function NewsletterSection() {
     return (
-      <div className="bg-white dark:bg-gray-900">
+      <div className="bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
-          <div className="px-6 py-6 bg-gray-900 dark:bg-gray-50 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
+          <div className="px-6 py-6 bg-black dark:bg-gray-50 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
             <div className="xl:w-0 xl:flex-1">
-              <h2 className="text-2xl font-semibold tracking-tight text-gray-50 dark:text-gray-900 sm:text-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight text-gray-50 dark:text-black sm:text-3xl">
                 {newsletterSignUp.heading}
               </h2>
               <p className="mt-3 max-w-3xl text-lg leading-6 text-gray-200 dark:text-gray-500">

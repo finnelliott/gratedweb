@@ -25,10 +25,10 @@ export default function NewsletterSignUpForm() {
 
     
     return (
-      <div className="bg-white dark:bg-gray-900">
+      <div className="bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto pt-24 px-4 sm:px-6 lg:pt-32 lg:px-8 lg:flex lg:items-center">
           <div className="lg:w-0 lg:flex-1">
-            <h2 className="text-3xl font-semibold text-gray-900 dark:text-gray-50 sm:text-4xl text-center mx-auto">{newsletterSignUp.heading}</h2>
+            <h2 className="text-3xl font-semibold text-black dark:text-gray-50 sm:text-4xl text-center mx-auto">{newsletterSignUp.heading}</h2>
             <p className="mt-3 max-w-3xl text-lg text-gray-500 dark:text-gray-200 text-center mx-auto">
               {newsletterSignUp.body}
             </p>

@@ -5,12 +5,12 @@ const mainFooter = content.shared.mainFooter
 
 export default function MainFooter() {
     return (
-      <footer className="bg-white dark:bg-gray-900">
+      <footer className="bg-white dark:bg-black">
         <div className="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
           <nav className="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
             {mainFooter.pageLinks.map((item) => (
               <div key={item.linkText} className="px-5 py-2">
-                <a href={item.linkHref} className="text-base text-gray-500 hover:text-gray-900 dark:text-gray-200 dark:hover:text-gray-400">
+                <a href={item.linkHref} className="text-base text-gray-500 hover:text-black dark:text-gray-200 dark:hover:text-gray-400">
                   {item.linkText}
                 </a>
               </div>

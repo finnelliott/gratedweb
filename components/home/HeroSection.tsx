@@ -10,10 +10,10 @@ const hero = content.home.hero
 
 export default function HeroSection() {
   return (
-    <main className="lg:relative bg-white dark:bg-gray-900">
+    <main className="lg:relative bg-white dark:bg-black">
     <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left lg:flex">
       <div className="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
-        <h1 className="text-3xl tracking-tight font-semibold text-gray-900 dark:text-gray-50 sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
+        <h1 className="text-3xl tracking-tight font-semibold text-black dark:text-gray-50 sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl">
           <span className="block xl:inline">{hero.heading1}</span>
         </h1>
         <p className="mt-3 max-w-md mx-auto text-xl text-gray-500 dark:text-gray-200 sm:text-2xl md:mt-5 md:max-w-3xl">
