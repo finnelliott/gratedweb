@@ -23,7 +23,7 @@ const newsletterSignUp = content.home.newsletterSignUp
 export default function NewsletterSection() {
     return (
       <div className="bg-white dark:bg-black">
-        <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
+        <div style={{"background": "radial-gradient(50% 50% at 50% 50%, #00E9BF 0%, rgba(0, 233, 191, 0) 100%)"}} className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:py-16 lg:px-8">
           <div className="px-6 py-6 bg-black dark:bg-gray-50 rounded-lg md:py-12 md:px-12 lg:py-16 lg:px-16 xl:flex xl:items-center">
             <div className="xl:w-0 xl:flex-1">
               <h2 className="text-2xl font-semibold tracking-tight text-gray-50 dark:text-black sm:text-3xl">
